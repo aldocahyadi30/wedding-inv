@@ -4,7 +4,7 @@ import Countdown from "./components/Countdown";
 import Hero from "./components/Hero";
 import Profile from "./components/Profile";
 import Event from "./components/Event";
-import Gallery from "./components/gALLERY";
+import Gallery from "./components/Gallery";
 import Confirmation from "./components/Confirmation";
 import Gift from "./components/Gift";
 import MusicButton from "./components/MusicButton";
