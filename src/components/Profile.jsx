@@ -5,7 +5,9 @@ import GroomImage from "../assets/images/groom.jpg";
 const Profile = () => {
   return (
     <div className="h-auto w-full flex flex-col items-center justify-center p-8">
-      <p className="poppins-regular text-center text-sm mb-12">Tanpa mengurangi rasa hormat dengan ini kami mengundang Bapak/Ibu/Saudara/i untuk hadir pada upacara pernikahan kami</p>
+      <p className="poppins-regular text-center text-sm mb-12">
+        Tuhan telah mempertemukan kami dalam ikatan cinta dan kasih-Nya. Dengan penuh sukacita dan syukur, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberkati kami dalam upacara pernikahan kami, sebagai saksi atas janji suci yang kami ikrarkan di hadapan Tuhan
+      </p>
 
       <div className="h-auto w-4/6 flex flex-col items-center justify-center">
         <div className="border-6 border-zinc-200 border-double rounded-full">

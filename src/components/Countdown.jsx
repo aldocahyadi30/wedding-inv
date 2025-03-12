@@ -3,7 +3,7 @@ import LogoImage from "../assets/images/logo.png";
 
 const Countdown = () => {
   return (
-    <div id="countdown-div" className="h-[50vh] w-screen bg-zinc-200">
+    <div id="countdown-div" className="h-[50vh] w-full bg-zinc-200">
       <div className="h-full w-full flex flex-col items-center justify-center p-8">
         <img src={LogoImage} alt="" className="h-4/12 mb-12" />
         <div className="bg-zinc-700 p-2  rounded-2xl mt-12 mb-4">

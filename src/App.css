@@ -122,3 +122,10 @@
   font-weight: 900;
   font-style: italic;
 }
+
+.lora-bold {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
