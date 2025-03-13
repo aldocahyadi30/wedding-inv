@@ -37,7 +37,7 @@ const Confirmation = () => {
     setSubmitting(true);
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwcIQT6KwRvIPYavdmNoPmpgOusNXGfN7zdUrlAT-_wQSw00aTJd4JU2wAmKgb_FXJw/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbyxwdmx9hhooim4NaFmQUhRjBz9ohxMLOSxCVbWg1oxLxeUJOuZaP6ewArV4Q-uWL-t/exec", {
         redirect: "follow",
         method: "POST",
         body: JSON.stringify(formData),
@@ -49,10 +49,13 @@ const Confirmation = () => {
       if (response.ok) {
         setSuccess(true);
         setFormData({ nama: "", status: "", pax: "" }); // Clear the form
+        alert("Konfirmasi kehadiran berhasil dikirim. Terima kasih.");
       } else {
+        alert("Gagal mengirimkan konfirmasi. Silakan coba lagi.");
         console.error("Failed to submit form");
       }
     } catch (error) {
+      alert("Gagal mengirimkan konfirmasi. Silakan coba lagi.");
       console.error("Error:", error);
     } finally {
       setSubmitting(false);
@@ -83,7 +86,6 @@ const Confirmation = () => {
       <button id="confirm-btn" onClick={handleSubmit} className="bg-zinc-700 poppins-regular cursor-pointer text-zinc-200 text-lg border text-zinc-200 w-full p-2 mt-4 hover:bg-zinc-800">
         {submitting ? "Sedang Mengonfirmasi..." : "Konfirmasi Kehadiran"}
       </button>
-      {success && <p>Form submitted successfully!</p>}
     </div>
   );
 };
