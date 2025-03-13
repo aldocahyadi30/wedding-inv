@@ -29,6 +29,11 @@ const Confirmation = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+  
+    if (!formData.nama || !formData.status || !formData.pax) {
+      alert("Mohon isi semua kolom yang tersedia");
+      return;
+    }
     setSubmitting(true);
 
     try {
@@ -61,13 +66,16 @@ const Confirmation = () => {
       <div className="h-auto bg-zinc-700 w-full flex flex-col items-center justify-center p-4">
         <p className="text-center text-zinc-200 poppins-regular text-sm mb-2">Dengan segala hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan menjadi saksi atas janji suci kami di hadapan Tuhan. Terima kasih atas doa dan dukungannya</p>
         <form id="confirmation-form" action="" method="POST" className="w-full h-full">
-          <input type="text" id="input-nama" name="nama" className="w-full bg-zinc-200 text-zinc-700 poppins-regular p-2" placeholder="Ketik Nama Anda" onChange={handleChange} required/>
+          <input type="text" id="input-nama" name="nama" className="w-full bg-zinc-200 text-zinc-700 poppins-regular p-2" placeholder="Ketik Nama Anda" onChange={handleChange} required />
           <div className="flex w-full gap-2 mt-2">
             <select name="status" id="select-status" className="w-[70%] bg-zinc-200 text-zinc-700 poppins-regular p-2" onChange={handleChange} required>
+              <option value="" disabled selected hidden>
+                -- Pilih Kehadiran --
+              </option>
               <option value="Hadir">Bersedia Hadir</option>
               <option value="Tidak Hadir">Maaf, Tidak Dapar Hadir</option>
             </select>
-            <input type="number" name="pax" id="input-pax" min={1} max={4} className="w-[30%] bg-zinc-200 text-zinc-700 poppins-regular p-2" onInput={handlePax} onChange={handleChange}/>
+            <input type="number" name="pax" id="input-pax" min={1} max={4} className="w-[30%] bg-zinc-200 text-zinc-700 poppins-regular p-2" onInput={handlePax} onChange={handleChange} />
           </div>
         </form>
       </div>
