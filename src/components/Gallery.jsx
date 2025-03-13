@@ -1,14 +1,14 @@
 import React from "react";
-import Image1 from "../assets/images/gallery/1.jpg";
-import Image2 from "../assets/images/gallery/2.jpg";
-import Image3 from "../assets/images/gallery/3.jpg";
-import Image4 from "../assets/images/gallery/4.jpg";
-import Image5 from "../assets/images/gallery/5.jpg";
-import Image6 from "../assets/images/gallery/6.jpg";
-import Image7 from "../assets/images/gallery/7.jpg";
-import Image8 from "../assets/images/gallery/8.jpg";
-import Image9 from "../assets/images/gallery/9.jpg";
-import Image10 from "../assets/images/gallery/10.jpg";
+import Image1 from "../assets/images/gallery/1.webp";
+import Image2 from "../assets/images/gallery/2.webp";
+import Image3 from "../assets/images/gallery/3.webp";
+import Image4 from "../assets/images/gallery/4.webp";
+import Image5 from "../assets/images/gallery/5.webp";
+import Image6 from "../assets/images/gallery/6.webp";
+import Image7 from "../assets/images/gallery/7.webp";
+import Image8 from "../assets/images/gallery/8.webp";
+import Image9 from "../assets/images/gallery/9.webp";
+import Image10 from "../assets/images/gallery/10.webp";
 
 const Gallery = () => {
   return (

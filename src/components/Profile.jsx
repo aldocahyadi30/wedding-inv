@@ -1,6 +1,6 @@
 import React from "react";
-import BrideImage from "../assets/images/bride.jpg";
-import GroomImage from "../assets/images/groom.jpg";
+import BrideImage from "../assets/images/bride.webp";
+import GroomImage from "../assets/images/groom.webp";
 
 const Profile = () => {
   return (
