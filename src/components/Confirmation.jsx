@@ -32,7 +32,7 @@ const Confirmation = () => {
     setSubmitting(true);
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbz6nTZGobRWwoJ1JvINCEcYQ8iDfaGksx_35h9TscYL7NkhlqaBaMOLInh--zj1IRUk/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxTqRiraH74Ec9FrTE3qT8wr4v8FgJ-ZW6YsNdsn6mUvlCnPR_TOV7qNPMP4RvOLn3q/exec", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
