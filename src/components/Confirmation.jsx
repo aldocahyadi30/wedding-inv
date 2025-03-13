@@ -48,7 +48,7 @@ const Confirmation = () => {
 
       if (response.ok) {
         setSuccess(true);
-        setFormData({ name: "", email: "", message: "" }); // Clear the form
+        setFormData({ nama: "", status: "", pax: "" }); // Clear the form
       } else {
         console.error("Failed to submit form");
       }
