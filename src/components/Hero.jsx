@@ -3,7 +3,7 @@ import CoverImage from "../assets/images/cover.webp";
 
 const Hero = () => {
   return (
-    <div id="hero-div" className="relative flex h-screen w-full bg-zinc-600">
+    <div id="hero-div" className="relative flex h-screen w-screen bg-zinc-600">
       {/* Background Image */}
       <div className="h-auto w-full">
         <img src={CoverImage} alt="Cover" className="w-full h-full object-cover" />

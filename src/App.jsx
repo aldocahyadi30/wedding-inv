@@ -14,8 +14,8 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
-  // Play music after first user interaction
-  useEffect(() => {
+   // Play music after first user interaction
+   useEffect(() => {
     const handleFirstInteraction = () => {
       if (audioRef.current) {
         audioRef.current.play();
@@ -46,7 +46,7 @@ function App() {
     }
   };
   return (
-    <div className="h-full w-full flex flex-col justify-center items-center">
+    <div className="h-auto w-screen flex flex-col justify-center items-center">
       <Hero />
       <Countdown />
       <Profile />
