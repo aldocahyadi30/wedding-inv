@@ -12,7 +12,7 @@ import Image10 from "../assets/images/gallery/10.webp";
 
 const Gallery = () => {
   return (
-    <div id="gallery-div" className="h-auto w-full flex bg-zinc-700 flex-col items-center justify-center gap-2 p-2">
+    <div id="gallery-div" className="h-auto w-full flex bg-zinc-700 flex-col items-center justify-center gap-2 p-4">
       <p className="lora-bold text-zinc-200 text-center text-2xl my-2">GALLERY</p>
       <div className="flex h-auto w-full gap-2">
         <img src={Image1} className="w-1/2 h-fit object-cover" alt="Portrait 1" />

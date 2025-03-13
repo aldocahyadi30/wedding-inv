@@ -10,15 +10,14 @@ const Confirmation = () => {
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  //handle if the user input exceed the limit of pax
   const handlePax = () => {
     const pax = document.getElementById("input-pax");
     if (pax.value > 4) {
       pax.value = 4;
     }
 
-    if (pax.value < 1) {
-      pax.value = 1;
+    if (pax.value < 0) {
+      pax.value = 0;
     }
   };
 
@@ -67,7 +66,7 @@ const Confirmation = () => {
       <p className="lora-bold text-zinc-700 text-center text-2xl mb-8">KONFIRMASI KEHADIRAN</p>
 
       <div className="h-auto bg-zinc-700 w-full flex flex-col items-center justify-center p-4">
-        <p className="text-center text-zinc-200 poppins-regular text-sm mb-2">Dengan segala hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan menjadi saksi atas janji suci kami di hadapan Tuhan. Terima kasih atas doa dan dukungannya</p>
+        <p className="text-center text-zinc-200 poppins-regular mb-6">Dengan segala hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan menjadi saksi atas janji suci kami di hadapan Tuhan</p>
         <form id="confirmation-form" action="" method="POST" className="w-full h-full">
           <input type="text" id="input-nama" name="nama" className="w-full bg-zinc-200 text-zinc-700 poppins-regular p-2" placeholder="Ketik Nama Anda" onChange={handleChange} required />
           <div className="flex w-full gap-2 mt-2">
@@ -78,7 +77,7 @@ const Confirmation = () => {
               <option value="Hadir">Bersedia Hadir</option>
               <option value="Tidak Hadir">Maaf, Tidak Dapar Hadir</option>
             </select>
-            <input type="number" name="pax" id="input-pax" min={1} max={4} className="w-[30%] bg-zinc-200 text-zinc-700 poppins-regular p-2" onInput={handlePax} onChange={handleChange} />
+            <input type="number" name="pax" id="input-pax" min={0} max={4} className="w-[30%] bg-zinc-200 text-zinc-700 poppins-regular p-2" onInput={handlePax} onChange={handleChange} />
           </div>
         </form>
       </div>

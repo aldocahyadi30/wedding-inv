@@ -2,6 +2,29 @@ import React from "react";
 import LogoImage from "../assets/images/logo.png";
 
 const Countdown = () => {
+  let date = new Date("Mar 22, 2025 00:00:00").getTime();
+
+  let x = setInterval(() => {
+    let now = new Date().getTime();
+    let distance = date - now;
+
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("day").innerHTML = days < 10 ? `0${days}` : days;
+    document.getElementById("hour").innerHTML = hours < 10 ? `0${hours}` : hours;
+    document.getElementById("minute").innerHTML = minutes < 10 ? `0${minutes}` : minutes;
+    document.getElementById("second").innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+
+    
+
+  }, 1000);
+
+  if (document.readyState === "complete") {
+    clearInterval(x);
+  }
   return (
     <div id="countdown-div" className="h-[50vh] w-full bg-zinc-200">
       <div className="h-full w-full flex flex-col items-center justify-center p-8">
