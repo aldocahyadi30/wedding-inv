@@ -15,23 +15,23 @@ const Gallery = () => {
     <div id="gallery-div" className="h-auto w-full flex bg-zinc-700 flex-col items-center justify-center gap-2 p-4">
       <p className="lora-bold text-zinc-200 text-center text-2xl my-2">GALLERY</p>
       <div className="flex h-auto w-full gap-2">
-        <img src={Image1} className="w-[49%] h-fit h-min-fit  object-cover" alt="Portrait 1" />
-        <img src={Image2} className="w-[49%] h-fit h-min-fit object-cover" alt="portrait 2" />
+        <img src={Image1} className="w-[49%] h-[325px] object-cover" alt="Portrait 1" />
+        <img src={Image2} className="w-[49%] h-[325px] object-cover" alt="portrait 2" />
       </div>
       <div className="flex h-auto w-full gap-2">
-        <img src={Image3} className="w-[49%] h-fit h-min-fit object-cover" alt="Portrait 3" />
-        <img src={Image4} className="w-[49%] h-fit h-min-fit object-cover" alt="Portrait 4" />
+        <img src={Image3} className="w-[49%] h-[325px] object-cover" alt="Portrait 3" />
+        <img src={Image4} className="w-[49%] h-[325px] object-cover" alt="Portrait 4" />
       </div>
-      <img src={Image5} className="w-full h-fit h-min-fit object-cover" alt="Landscape 1" />
+      <img src={Image5} className="w-full h-fit object-cover" alt="Landscape 1" />
       <div className="flex h-auto w-full gap-2">
-        <img src={Image6} className="w-[49%] h-fit h-min-fit object-cover" alt="Portrait 5" />
-        <img src={Image7} className="w-[49%] h-fit h-min-fit object-cover" alt="portrait 6" />
+        <img src={Image6} className="w-[49%] h-[325px] object-cover" alt="Portrait 5" />
+        <img src={Image7} className="w-[49%] h-[325px] object-cover" alt="portrait 6" />
       </div>
       <div className="flex h-auto w-full gap-2">
-        <img src={Image8} className="w-[49%] h-fit h-min-fit object-cover" alt="Portrait 7" />
-        <img src={Image9} className="w-[49%] h-fit h-min-fit object-cover" alt="Portrait 8" />
+        <img src={Image8} className="w-[49%] h-[325px] object-cover" alt="Portrait 7" />
+        <img src={Image9} className="w-[49%] h-[325px] object-cover" alt="Portrait 8" />
       </div>
-      <img src={Image10} className="w-full h-fit h-min-fit object-cover" alt="Landscape 2" />
+      <img src={Image10} className="w-full h-fit object-cover" alt="Landscape 2" />
     </div>
   );
 };
