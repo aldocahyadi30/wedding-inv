@@ -36,7 +36,7 @@ const Confirmation = () => {
     setSubmitting(true);
 
     try {
-      const response = await fetch(import.meta.env.GOOGLE_APP_SCRIPT_URL, {
+      const response = await fetch(import.meta.env.VITE_GOOGLE_APP_SCRIPT_URL, {
         redirect: "follow",
         method: "POST",
         body: JSON.stringify(formData),
