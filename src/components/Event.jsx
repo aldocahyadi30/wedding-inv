@@ -22,7 +22,7 @@ const Event = () => {
           </div>
           <hr className="bg-zinc-700  w-[90%] h-[0.1rem] mx-auto" />
 
-          <div className="flex flex-col p-4  justify-between h-full">
+          <div className="flex flex-col p-4 justify-between h-full">
             <p className="text-zinc-700  text-sm align-middle poppins-regular">
               <FontAwesomeIcon icon={faClock} className="text-zinc-700 text-base mr-2" />
               11:00 WIB s/d Selesai
@@ -38,7 +38,7 @@ const Event = () => {
               Peguyangan, Kec. Denpasar Utara <br />
               Kota Denpasar, Bali
             </p>
-            <button className="bg-zinc-100 poppins-regular text-xs border text-zinc-500 w-fit p-1">
+            <button className="bg-zinc-100 poppins-regular text-xs border text-zinc-500 w-fit p-1 align-middle" style={{ width: "100%", cursor: "pointer" }}>
               <FontAwesomeIcon icon={faMapMarkedAlt} className="text-sm mr-2" />
               Google Map
             </button>
@@ -78,7 +78,7 @@ const Event = () => {
               Peguyangan, Kec. Denpasar Utara <br />
               Kota Denpasar, Bali
             </p>
-            <button className="bg-zinc-100 poppins-regular text-xs border text-zinc-500 w-fit p-1">
+            <button className="bg-zinc-100 poppins-regular text-xs border text-zinc-500 w-fit p-1" style={{ width: "100%", cursor: "pointer" }}>
               <FontAwesomeIcon icon={faMapMarkedAlt} className="text-sm mr-2" />
               Google Map
             </button>

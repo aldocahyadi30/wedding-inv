@@ -14,8 +14,8 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
-   // Play music after first user interaction
-   useEffect(() => {
+  // Play music after first user interaction
+  useEffect(() => {
     const handleFirstInteraction = () => {
       if (audioRef.current) {
         audioRef.current.play();
@@ -45,20 +45,23 @@ function App() {
       setIsPlaying(!isPlaying); // Toggle the state
     }
   };
+  
   return (
-    <div className="h-auto w-screen flex flex-col justify-center items-center">
-      <Hero />
-      <Countdown />
-      <Profile />
-      <Event />
-      <Gallery />
-      <Confirmation />
-      <Gift />
+    <div className="w-screen flex justify-center items-center">
+      <div className="h-auto w-screen flex flex-col justify-center items-center max-w-[428px] mx-auto">
+        <Hero />
+        <Countdown />
+        <Profile />
+        <Event />
+        <Gallery />
+        <Confirmation />
+        <Gift />
 
-      <audio ref={audioRef} loop>
-        <source src={Music} type="audio/mpeg" />
-      </audio>
-      <MusicButton isPlaying={isPlaying} togglePlay={togglePlay} />
+        <audio ref={audioRef} loop>
+          <source src={Music} type="audio/mpeg" />
+        </audio>
+        <MusicButton isPlaying={isPlaying} togglePlay={togglePlay} />
+      </div>
     </div>
   );
 }

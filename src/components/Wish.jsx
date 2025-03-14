@@ -9,7 +9,6 @@ const Wish = () => {
   const [comments, setComments] = useState([]);
   const [submitting, setSubmitting] = useState(false);
 
-  // Function to fetch the latest comments
   const fetchComments = async () => {
     const q = query(
       collection(db, "comments"),
