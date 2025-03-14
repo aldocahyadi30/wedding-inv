@@ -36,7 +36,7 @@ const Confirmation = () => {
     setSubmitting(true);
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbxuN9aGx1RSNGH9d6YA7atHIFra9piNIeXxpXizJxZoFx2-90duts4XKNDD7tXqgWh0/exec", {
+      const response = await fetch(process.env.GOOGLE_APP_SCRIPT_URL, {
         redirect: "follow",
         method: "POST",
         body: JSON.stringify(formData),
