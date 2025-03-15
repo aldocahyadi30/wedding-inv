@@ -60,7 +60,7 @@ const Wish = () => {
     }
   };
   return (
-    <div id="wish-div" className="h-auto w-full flex flex-col bg-zinc-200 items-center justify-center py-2 px-4 rounded-lg">
+    <div id="wish-div" className="h-auto w-full flex flex-col bg-zinc-200 items-center justify-center py-2 px-4 rounded-lg mb-10" data-aos="fade-up">
       <p className="lora-bold text-zinc-700 text-center text-xl mt-2 mb-4">FRIEND WISHES</p>
       <input type="text" id="input-wish-name" name="NamaWish" placeholder="Ketik Nama Anda" className="bg-zinc-700 text-zinc-200 poppins-regular p-2 w-full mb-2" onChange={(e) => setName(e.target.value)} />
       <textarea name="CommentWish" id="input-wish-comment" placeholder="Ketik Wish Anda" className="bg-zinc-700  text-zinc-200 poppins-regular p-2 w-full" rows={3} onChange={(e) => setMessage(e.target.value)}></textarea>

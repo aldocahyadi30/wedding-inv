@@ -57,6 +57,8 @@ function App() {
         <Confirmation />
         <Gift />
 
+        <p className="h-auto w-full flex flex-col bg-zinc-700 items-center justify-center py-2 px-4 pb-10 lora-bold text-white text-center text-xl">TERIMA KASIH</p>
+
         <audio ref={audioRef} loop>
           <source src={Music} type="audio/mpeg" />
         </audio>

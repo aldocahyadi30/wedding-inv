@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import BrideImage from "../assets/images/bride.webp";
 import GroomImage from "../assets/images/groom.webp";
 import FlowerCorner from "../assets/images/flower-corner.png";
 import FlowerStraight from "../assets/images/flower-straight.png";
 
 const Profile = () => {
-  return (
-    <div className="h-auto w-full flex flex-col items-center justify-center p-8 relative overflow-hidden">
-      <p className="poppins-regular text-center text-sm mt-2 mb-12 w-75">Dengan sukacita dan syukur, kami mengundang Bapak/Ibu/Saudara/i untuk menyaksikan dan memberkati pernikahan kami, sebagai tanda janji suci di hadapan Tuhan.</p>
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+    });
+  }, []);
 
-      <div className="h-auto  flex flex-col items-center justify-center">
+  return (
+    <div className="h-auto w-full flex flex-col items-center justify-center p-8 relative overflow-hidden" >
+      <p className="poppins-regular text-center text-sm mt-2 mb-12 w-75" data-aos="fade-up">Dengan sukacita dan syukur, kami mengundang Bapak/Ibu/Saudara/i untuk menyaksikan dan memberkati pernikahan kami, sebagai tanda janji suci di hadapan Tuhan.</p>
+
+      <div className="h-auto  flex flex-col items-center justify-center" data-aos="fade-left">
         <div className="border-6 w-4/6 border-zinc-200 border-double rounded-full">
           <img src={GroomImage} alt="Groom" className="object-cover rounded-full" />
         </div>
@@ -19,12 +28,12 @@ const Profile = () => {
           <br /> Ibu Satilina Lombu
         </p>
       </div>
-      <div className="flex items-center justify-center w-75">
+      <div className="flex items-center justify-center w-75" data-aos="fade">
         <hr className="w-full h-[1rem]" />
         <p className="text-[5rem] imperial-script-regular mx-8 my-4">&</p>
         <hr className="w-full h-[1rem]" />
       </div>
-      <div className="h-auto  flex flex-col items-center justify-center mb-4">
+      <div className="h-auto  flex flex-col items-center justify-center mb-4" data-aos="fade-right">
         <div className="border-6 w-4/6 border-zinc-200 border-double rounded-full">
           <img src={BrideImage} alt="Bride" className="object-cover rounded-full" />
         </div>

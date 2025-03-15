@@ -5,6 +5,12 @@
   color: #f7f7f7;
 }
 
+#gallery-div {
+  img {
+    border-radius: 10px;
+  }  
+}
+
 .profile-picture-shadow {
   box-shadow: 4px 4px 8px rgba(229, 231, 235, 0.2);
 }

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import LogoImage from "../assets/images/logo.png";
 
 const Countdown = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   let date = new Date("Mar 22, 2025 00:00:00").getTime();
 
   let x = setInterval(() => {
@@ -28,11 +37,11 @@ const Countdown = () => {
   return (
     <div id="countdown-div" className="h-[50vh] w-full bg-zinc-200">
       <div className="h-full w-full flex flex-col items-center justify-center p-8">
-        <img src={LogoImage} alt="" className="h-4/12 mb-12" />
-        <div className="bg-zinc-700 p-2  rounded-2xl mt-12 mb-4">
+        <img src={LogoImage} alt="" className="h-4/12 mb-12" data-aos="fade-down" />
+        <div className="bg-zinc-700 p-2  rounded-2xl mt-12 mb-4" data-aos="fade-up">
           <p className="poppins-medium text-zinc-200 -bold text-2xl">SAVE THE DATE</p>
         </div>
-        <div className="flex flex-col items-center justify-center w-3/5">
+        <div className="flex flex-col items-center justify-center w-3/5" data-aos="fade-up">
           <p className="poppins-regular text-zinc-700 -bold text-sm">Maret 22, 2025</p>
           <hr className="bg-zinc-700  w-full h-[0.1rem] my-2" />
           <div className="flex">

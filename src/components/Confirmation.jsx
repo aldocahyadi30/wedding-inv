@@ -67,9 +67,9 @@ const Confirmation = () => {
 
   return (
     <div id="confirmation-div" className="h-[50vh] w-full flex bg-zinc-200 flex-col items-center justify-center p-2">
-      <p className="lora-bold text-zinc-700 text-center text-2xl mb-8">KONFIRMASI KEHADIRAN</p>
+      <p className="lora-bold text-zinc-700 text-center text-2xl mb-8" data-aos="fade-up">KONFIRMASI KEHADIRAN</p>
 
-      <div className="h-auto bg-zinc-700 w-full flex flex-col items-center justify-center p-4">
+      <div className="h-auto bg-zinc-700 w-full flex flex-col items-center justify-center p-4" data-aos="fade-up">
         <p className="text-center text-zinc-200 poppins-regular mb-6">Dengan segala hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan menjadi saksi atas janji suci kami di hadapan Tuhan</p>
         <form id="confirmation-form" action="" method="POST" className="w-full h-full">
           <input type="text" id="input-nama" name="nama" className="w-full bg-zinc-200 text-zinc-700 poppins-regular p-2" placeholder="Ketik Nama Anda" onChange={handleChange} required />
@@ -86,7 +86,7 @@ const Confirmation = () => {
         </form>
       </div>
 
-      <button id="confirm-btn" onClick={handleSubmit} className="bg-zinc-700 poppins-regular cursor-pointer text-zinc-200 text-lg border text-zinc-200 w-full p-2 mt-4 hover:bg-zinc-800">
+      <button id="confirm-btn" onClick={handleSubmit} className="bg-zinc-700 poppins-regular cursor-pointer text-zinc-200 text-lg border text-zinc-200 w-full p-2 mt-4 hover:bg-zinc-800" data-aos="fade-up" >
         {submitting ? (
           <>
             <div class="flex h-auto w-full items-center justify-center overflow-x-scroll rounded-lg  lg:overflow-visible">
