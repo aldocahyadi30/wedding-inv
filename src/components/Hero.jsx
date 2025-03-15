@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Text Content */}
       <div className="absolute bottom-12 left-0 right-0 flex flex-col items-center justify-center text-white">
         <p className="poppins-regular text-sm mb-2">The Wedding Of</p>
-        <p className="poppins-regular text-2xl font-black tracking-widest">BAZA & YORIMA</p>
+        <p className="poppins-regular text-2xl font-black tracking-widest">BAZA & YORI</p>
       </div>
     </div>
   );
