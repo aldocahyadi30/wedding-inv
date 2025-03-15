@@ -42,19 +42,22 @@ const Wish = () => {
         });
         setName("");
         setMessage("");
-        alert("Wish berhasil dikirim");
 
         // Fetch the latest comments after submitting the form
         await fetchComments();
+
+        alert("Wish berhasil dikirim");
       } catch (error) {
         alert("Gagal mengirimkan wish. Silakan coba lagi");
         console.error("Error adding comment: ", error);
+      } finally {
+        document.getElementById("input-wish-name").value = "";
+        document.getElementById("input-wish-comment").value = "";
+        setSubmitting(false);
       }
     } else {
       alert("Mohon isi semua kolom yang tersedia");
     }
-
-    setSubmitting(false);
   };
   return (
     <div id="wish-div" className="h-auto w-full flex flex-col bg-zinc-200 items-center justify-center py-2 px-4 rounded-lg">

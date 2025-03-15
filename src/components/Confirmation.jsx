@@ -1,3 +1,4 @@
+import { doc } from "firebase/firestore";
 import { React, useState } from "react";
 
 const Confirmation = () => {
@@ -57,6 +58,9 @@ const Confirmation = () => {
       alert("Gagal mengirimkan konfirmasi. Silakan coba lagi.");
       console.error("Error:", error);
     } finally {
+      document.getElementById("input-nama").value = "";
+      document.getElementById("select-status").value = "";
+      document.getElementById("input-pax").value = "";
       setSubmitting(false);
     }
   };

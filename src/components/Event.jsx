@@ -25,7 +25,7 @@ const Event = () => {
           <div className="flex flex-col p-4 justify-between h-full">
             <p className="text-zinc-700  text-sm align-middle poppins-regular">
               <FontAwesomeIcon icon={faClock} className="text-zinc-700 text-base mr-2" />
-              11:00 WIB s/d Selesai
+              11:00 WITA s/d Selesai
             </p>
             <p className="poppins-bold text-zinc-700 text-sm align-middle">
               <FontAwesomeIcon icon={faLocationDot} className="text-zinc-700 text-base mr-2" />
